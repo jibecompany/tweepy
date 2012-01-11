@@ -136,7 +136,6 @@ def bind_api(**config):
 
             while retries_performed < self.retry_count + 1:
                 # Open connection
-                print connection_args
                 if self.api.secure:
                     conn = httplib.HTTPSConnection(**connection_args)
                 else:
